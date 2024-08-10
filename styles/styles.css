@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Viga&display=swap');
+
+/* 
+.viga-regular {
+font-family: "Viga", sans-serif;
+font-weight: 400;
+font-style: normal;
+} */
+
+/*
+.inder-regular {
+font-family: "Inder", sans-serif;
+font-weight: 400;
+font-style: normal;
+} */
+
+.nav-item {
+    padding: 0 30px;
+}
+
+.bgdark {
+    background-color: black;
+}
+
+#myVideo {
+    position: fixed;
+    transform: rotate(90deg);
+    filter: brightness(0.4);
+    transform-origin: bottom left;
+    width: 100vh;
+    height: 100vw;
+    margin-top: -100vw;
+    object-fit: cover;
+    visibility: visible;
+}
+
+.heroContainer {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    height: 260px;
+    width: 260px;
+    background-image: url("../images/logo.jpg");
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 88px -15px rgba(147, 135, 240, 0.7);
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.text h1 {
+    font-size: 70px;
+    font-family: "Viga", sans-serif;
+
+}
+.gradient{
+    color: transparent;
+    background: linear-gradient(286deg, rgba(0,57,224,1) 0%, rgba(73,122,233,1) 35%, rgba(0,212,255,1) 61%, rgba(0,134,255,1) 96%);
+    -webkit-background-clip: text;
+}
+.highlight{
+    display: inline-block;
+    padding: .25em 8px;
+    border-radius: 20px;
+    background: linear-gradient(286deg, rgba(0,57,224,1) 0%, rgba(73,122,233,1) 35%, rgba(0,148,179,1) 61%, rgba(0,134,255,1) 96%);
+    color: #ffffff;
+}
+.highlight:hover{
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 10s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased; 
+}
+
+.text h1 span{
+    font-size: 35px;
+    position: relative;
+    color: white;
+    right: 20%;
+}
+
+.text p {
+    font-size: 16px;
+    color: white;
+    font-family: "Inder", sans-serif;
+}
+.a_btn a{
+    text-decoration: none;
+    color: white;
+}
+.a_btn a:hover{
+    text-decoration: none;
+    color: white;
+}
+.a_btn{
+    font-size: 18px;
+    padding: .25em 25px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: 2px dashed rgba(0,134,255,1);
+    border-radius: 30px;
+    
+}
+.a_btn:hover{
+    background: linear-gradient(286deg, rgba(0,57,224,1) 0%, rgba(73,122,233,1) 35%, rgba(0,148,179,1) 61%, rgba(0,134,255,1) 96%);
+    color: #ffffff;
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 10s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased; 
+    border: none;
+}
+/* animation
+ */
+
+.breathing{
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 10s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;    
+}
+
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
